@@ -21,7 +21,6 @@ export const updateUser = (dispatch: Dispatch<Action>) => (payload: User) =>
 
 export const restoreData =
   (dispatch: Dispatch<Action>, payload: User[]) => () => {
-    console.log('editing')
     dispatch({ payload, type: RESET_USERS })
   }
 
